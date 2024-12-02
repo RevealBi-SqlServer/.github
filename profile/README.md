@@ -90,11 +90,14 @@ The following resources are available to help with the PoC:
 
 - **[Documentation](https://help.revealbi.io/web/)**: Comprehensive documentation covering installation, licensing, and various features.
 - **[GitHub](https://github.com/RevealBi/sdk-samples-javascript)**: The Reveal BI GitHub repository contains SDK samples, issue tracking for bug reports and feature requests, and discussions for community support.
-- **Discord Channel**: A Discord channel dedicated to Reveal provides direct interaction with the product team.
+- **Support via Discord Channel**: A Discord channel dedicated to Reveal provides direct interaction with the product team.
+- **[Support via GitHub Discussions](https://github.com/RevealBi/Reveal.Sdk/discussions)**: A GitHub channel dedicated to Reveal provides direct interaction with the product team. Usually you'd use this if you can't access Discord due to corporate policy.
 - **[YouTube Channel](https://www.youtube.com/@RevealBI/videos)**: Webinars and videos covering various aspects of Reveal are available on the YouTube channel.
 - **[JavaScript API](https://help.revealbi.io/api/javascript/latest/)**: Reveal offers a comprehensive JavaScript API that allows customization of almost every aspect of the dashboard, including visualization chooser, editing modes, and adding custom elements.
 - **[User Documentation](https://help.revealbi.io/user/)**: Detailed documentation for end users of Reveal.
 - **[Developer Playground](https://help.revealbi.io/playground/)**: An interactive playground to experiment with Reveal BI's features.
+- **[Add Feature Requests, Bug, Review Open Issues](https://github.com/RevealBi/Reveal.Sdk/issues)**: Reveal's GitHub repository where you can review, add, comment on new or existing issues.
+
 
 ## PoC Requirements
 
