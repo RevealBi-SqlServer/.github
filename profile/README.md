@@ -87,11 +87,14 @@ A trial license key is valid for 30 days and can be extended upon request. When 
 ## Resources
 
 The following resources are available to help with the PoC:
-- **Documentation**: Comprehensive documentation covering installation, licensing, and various features.
-- **GitHub**: The Reveal BI GitHub repository contains SDK samples, issue tracking for bug reports and feature requests, and discussions for community support.
+
+- **[Documentation](https://help.revealbi.io/web/)**: Comprehensive documentation covering installation, licensing, and various features.
+- **[GitHub](https://github.com/RevealBi/sdk-samples-javascript)**: The Reveal BI GitHub repository contains SDK samples, issue tracking for bug reports and feature requests, and discussions for community support.
 - **Discord Channel**: A Discord channel dedicated to Reveal provides direct interaction with the product team.
-- **YouTube Channel**: Webinars and videos covering various aspects of Reveal are available on the YouTube channel.
-- **JavaScript API**: Reveal offers a comprehensive JavaScript API that allows customization of almost every aspect of the dashboard, including visualization chooser, editing modes, and adding custom elements.
+- **[YouTube Channel](https://www.youtube.com/@RevealBI/videos)**: Webinars and videos covering various aspects of Reveal are available on the YouTube channel.
+- **[JavaScript API](https://help.revealbi.io/api/javascript/latest/)**: Reveal offers a comprehensive JavaScript API that allows customization of almost every aspect of the dashboard, including visualization chooser, editing modes, and adding custom elements.
+- **[User Documentation](https://help.revealbi.io/user/)**: Detailed documentation for end users of Reveal.
+- **[Developer Playground](https://help.revealbi.io/playground/)**: An interactive playground to experiment with Reveal BI's features.
 
 ## PoC Requirements
 
