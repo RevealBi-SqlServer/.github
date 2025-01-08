@@ -1,5 +1,7 @@
 # What's in this GitHub Organization
 
+You'll find everything you need to learn and implement a Reveal SDK application (both client and server) in this organization. This documents includes the general over of Reveal, links to source code for getting started samples, links to product documentation, support and video training.
+
 Server Examples:
 
 - Basic .NET Core / SQL Server with limited comments - [netcore-server-basic](https://github.com/RevealBi-SqlServer/netcore-server-basic)
@@ -108,6 +110,18 @@ The `Reveal.SDK.DOM` library, currently in beta, provides a typed view of dashbo
 #### Dashboard Titles vs. File Names
 
 The dashboard title displayed to the user can differ from the underlying file name. The `DashboardsThumbnail` and `DashboardsNames` APIs are used to retrieve both the title and file name, ensuring consistency in user experience.
+
+## Video Training
+
+Explore these video resources to help you set up and configure Reveal BI for .NET and SQL Server:
+
+- [Setting Up a .NET Core Server with Reveal BI: Quick & Easy Guide](https://youtu.be/ZGxZhnr0aIw?si=qmtVXL_eJkTZ8oEq)
+- [Configuring SQL Server in a .NET Core Server in Reveal BI](https://youtu.be/oSQ13IikHn0?si=cizw6Hr_cqVWBDXz)
+- [Leveraging SQL Server Stored Procedures and Parameters in Reveal BI](https://youtu.be/Q2-TzTi7YJE?si=udnNCOf2fJCCDGqr)
+- [Configuring Row Level Security with UserContext in Reveal BI](https://youtu.be/dJttjCU-xC8?si=qyFDvuqtHR1HGIpf)
+
+For a comprehensive learning path, check out the **.NET & SQL Server Track Playlist**:  
+[https://youtube.com/playlist?list=PLprTqzVaLDG8TSd0nIwgmAkwIF0xkJRI7&si=-TvFdEN4vNzeFfRP](https://youtube.com/playlist?list=PLprTqzVaLDG8TSd0nIwgmAkwIF0xkJRI7&si=-TvFdEN4vNzeFfRP)
 
 ## Licensing
 
