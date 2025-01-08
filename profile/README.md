@@ -1,3 +1,18 @@
+# What's in this GitHub Organization
+
+Server Examples:
+
+- Basic .NET Core / SQL Server with limited comments - [netcore-server-basic](https://github.com/RevealBi-SqlServer/netcore-server-basic)
+- Advanced / heavily commented .NET Core / SQL Server implementation - [netcore-server](https://github.com/RevealBi-SqlServer/netcore-server)
+
+Client Examples:
+
+- Using HTML - [html](https://github.com/RevealBi-SqlServer/html)
+- Using Angular - [angular-client](https://github.com/RevealBi-SqlServer/angular-client)
+- Using React - [react-client](https://github.com/RevealBi-SqlServer/react-client)
+
+---
+
 # Reveal Overview & Important Notes for a PoC Kickoff
 
 ## Dependencies
@@ -30,13 +45,19 @@ In this setup:
 
 Authentication is handled by implementing the `IRVAuthenticationProvider`. A username and password credential are created, and the connection details are stored in the data source provider. The example utilizes an Azure SQL instance.
 
+- **[Authentication](https://help.revealbi.io/web/authentication/)**: Detailed documentation on setting up authentication.
+
 #### Data Source Provider
 
 The `DataSourceProvider` specifies the location of the database, including host, database name, schema, and port. This information can be retrieved from various sources, such as app settings, Azure Key Vault, or configuration files. The example uses app settings to store these details.
 
+- **[Data Source / Data Source Items](https://help.revealbi.io/web/adding-data-sources/ms-sql-server/)**: Guidance on setting up and managing data sources.
+
 #### Data Source Items
 
 Custom data source items can be created, such as parameterized queries and stored procedures. These items are defined in the `DataSourceProvider` and are made accessible to users through a dialog.
+
+- **[Custom Queries](https://help.revealbi.io/web/custom-queries/)**: Steps for adding custom queries to data sources.
 
 ### Optional, but Important Server Functions
 
@@ -44,9 +65,13 @@ Custom data source items can be created, such as parameterized queries and store
 
 The `ObjectFilter` controls the data access permissions for users. It has a `Filter` function that can be customized to restrict data visibility based on user roles or other criteria. The example demonstrates a scenario where users with the "user" role can only access "All Orders" and "Invoices" data.
 
+- **[Object Filter](https://github.com/RevealBi/sdk-samples-javascript/tree/main/FilteringDataObjects)**: Examples of filtering data objects.
+
 #### User Context
 
 The `UserContext` provides information about the logged-in user. It can be used to store default properties like `UserID` or other custom properties defined in the `UserContextProvider`. The `GetUserContext` method is used to retrieve the user context.
+
+- **[User Context](https://help.revealbi.io/web/user-context/)**: Explanation of how to utilize the user context.
 
 #### Dashboard Provider
 
@@ -66,15 +91,19 @@ Dashboards are loaded using the `LoadDashboard` function, which takes the name o
 
 The `SetAdditionalHeadersProvider` API allows passing custom headers to the server. These headers can contain information like customer ID or other relevant details.
 
+- **[SetAdditionalHeadersProvider](https://help.revealbi.io/web/user-context/)**: Documentation on using this API for custom headers.
+
 ### Adding Custom Menu Items to Visualizations
 
 In Reveal, you can customize the menu that appears on specific visualizations using the `onMenuOpening` event. This can be especially useful for adding custom actions directly accessible to users from visualizations.
 
-When configuring a Reveal view, use the `onMenuOpening` handler to dynamically inject menu items based on conditions (such as specific visualization titles or user roles). This functionality is helpful for tailoring the user experience in interactive dashboards.
+- **[Custom Menu Items](https://help.revealbi.io/web/custom-menu-items/)**: Instructions for adding custom menu items to visualizations.
 
 ### Using the Reveal SDK DOM
 
 The `Reveal.SDK.DOM` library, currently in beta, provides a typed view of dashboards. It allows easy access to dashboard properties, such as file name and title.
+
+- **[Reveal SDK DOM](https://github.com/RevealBi/Reveal.Sdk.Dom)**: Library for accessing dashboard properties.
 
 #### Dashboard Titles vs. File Names
 
@@ -90,18 +119,15 @@ The following resources are available to help with the PoC:
 
 - **[Documentation](https://help.revealbi.io/web/)**: Comprehensive documentation covering installation, licensing, and various features.
 - **[GitHub](https://github.com/RevealBi/sdk-samples-javascript)**: The Reveal BI GitHub repository contains SDK samples, issue tracking for bug reports and feature requests, and discussions for community support.
-- **Support via Discord Channel**: A Discord channel dedicated to Reveal provides direct interaction with the product team.
-- **[Support via GitHub Discussions](https://github.com/RevealBi/Reveal.Sdk/discussions)**: A GitHub channel dedicated to Reveal provides direct interaction with the product team. Usually you'd use this if you can't access Discord due to corporate policy.
+- **[Support via Discord Channel](https://discord.gg/reveal)**: A Discord channel dedicated to Reveal provides direct interaction with the product team.
+- **[Support via GitHub Discussions](https://github.com/RevealBi/Reveal.Sdk/discussions)**: A GitHub channel dedicated to Reveal provides direct interaction with the product team. Usually, you'd use this if you can't access Discord due to corporate policy.
 - **[YouTube Channel](https://www.youtube.com/@RevealBI/videos)**: Webinars and videos covering various aspects of Reveal are available on the YouTube channel.
 - **[JavaScript API](https://help.revealbi.io/api/javascript/latest/)**: Reveal offers a comprehensive JavaScript API that allows customization of almost every aspect of the dashboard, including visualization chooser, editing modes, and adding custom elements.
-- **[User Documentation](https://help.revealbi.io/user/)**: Detailed documentation for end users of Reveal.
 - **[Developer Playground](https://help.revealbi.io/playground/)**: An interactive playground to experiment with Reveal BI's features.
-- **[Add Feature Requests, Bug, Review Open Issues](https://github.com/RevealBi/Reveal.Sdk/issues)**: Reveal's GitHub repository where you can review, add, comment on new or existing issues.
+- **[Add Feature Requests, Bug Reports, or Review Open Issues](https://github.com/RevealBi/Reveal.Sdk/issues)**: Reveal's GitHub repository where you can review, add, or comment on new or existing issues.
 
 ## PoC Requirements
 
 ### Check-in Calls
 
 Weekly check-in calls lasting 10-15 minutes will be scheduled to provide updates and address any challenges during the PoC.
-
---- 
