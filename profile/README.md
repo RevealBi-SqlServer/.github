@@ -6,6 +6,8 @@ Server Examples:
 
 - Basic .NET Core / SQL Server with limited comments - [netcore-server-basic](https://github.com/RevealBi-SqlServer/netcore-server-basic)
 - Advanced / heavily commented .NET Core / SQL Server implementation - [netcore-server](https://github.com/RevealBi-SqlServer/netcore-server)
+- NodeJS TypeScript / SQL Server implementation - [netcore-server](https://github.com/RevealBi-SqlServer/node-ts)
+
 
 Client Examples:
 
