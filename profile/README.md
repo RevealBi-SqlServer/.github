@@ -25,7 +25,7 @@ The essential dependencies for a .NET Core application using Reveal are the Reve
 
 ## Integrating Reveal
 
-Reveal is integrated into a .NET Core application through the `Program.cs` file. After adding the NuGet packages, dependency injection is configured to include Reveal services. Here’s the setup in `Program.cs`:
+Reveal is integrated into a .NET Core or NodeJS application via NuGet packages for .NET or an NPM package for NodeJS. Dependency injection is configured to include Reveal services. Here’s the setup in `Program.cs`:
 
 ```csharp
 builder.Services.AddControllers().AddReveal(builder =>
@@ -38,10 +38,25 @@ builder.Services.AddControllers().AddReveal(builder =>
         .DataSources.RegisterMicrosoftSqlServer();
 });
 ```
+or in TypeScript / JavaScript in your app.ts / main.js:
+
+```typescript
+const revealOptions: RevealOptions = {
+	userContextProvider: userContextProvider,
+	authenticationProvider: authenticationProvider,
+	dataSourceProvider: dataSourceProvider,
+	dataSourceItemProvider: dataSourceItemProvider,
+	dataSourceItemFilter: dataSourceItemFilter,
+	dashboardProvider: dashboardProvider,
+	dashboardStorageProvider: dashboardStorageProvider
+}
+app.use('/', reveal(revealOptions));
+```
+
 
 In this setup:
 - **AddReveal Configuration**: Registers essential services like `AuthenticationProvider` and `DataSourceProvider`, while including optional configurations such as `UserContextProvider`, `ObjectFilterProvider`, and `DashboardProvider` as needed.
-- **Data Sources**: Registers the Microsoft SQL Server connector, which is necessary for SQL Server integrations.
+- **Data Sources**: Registers the Microsoft SQL Server connector, which is necessary for SQL Server integrations in .NET Core.  For NodeJS, you are not required to install / register the SQL Server connector separately.
 
 ### Core Server Functions
 
